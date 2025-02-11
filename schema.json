@@ -1,0 +1,79 @@
+{
+  "collections": [
+    {
+      "id": "pass_templates",
+      "name": "pass_templates",
+      "type": "base",
+      "listRule": "",
+      "viewRule": "",
+      "createRule": "",
+      "updateRule": "",
+      "deleteRule": "",
+      "schema": [
+        { "name": "name", "type": "text", "required": true },
+        { "name": "description", "type": "text", "required": false },
+        { "name": "organization_name", "type": "text", "required": false },
+        { "name": "type", "type": "text", "required": true },
+        { "name": "transit_type", "type": "text", "required": false },
+        { "name": "google_pay_active", "type": "bool", "required": false },
+        { "name": "huawei_wallet_active", "type": "bool", "required": false },
+        { "name": "pass_type_id", "type": "text", "required": true },
+        { "name": "pass_type_id_expiration", "type": "date", "required": false },
+        { "name": "expiration_date", "type": "date", "required": false },
+        { "name": "logo_text", "type": "text", "required": false },
+        { "name": "barcode", "type": "json", "required": false },
+        { "name": "fields", "type": "json", "required": false },
+        { "name": "images", "type": "json", "required": false },
+        { "name": "colors", "type": "json", "required": false }
+      ]
+    },
+    {
+      "id": "passes",
+      "name": "passes",
+      "type": "base",
+      "listRule": "",
+      "viewRule": "",
+      "createRule": "",
+      "updateRule": "",
+      "deleteRule": "",
+      "schema": [
+        { "name": "pass_template_id", "type": "relation", "required": true, "options": { "collectionId": "pass_templates" } },
+        { "name": "barcode_value", "type": "text", "required": true },
+        { "name": "status", "type": "select", "required": true, "options": { "values": ["active", "voided", "expired"] } },
+        { "name": "validity", "type": "json", "required": false },
+        { "name": "user_email", "type": "email", "required": false },
+        { "name": "nfc_enabled", "type": "bool", "required": false }
+      ]
+    },
+    {
+      "id": "notifications",
+      "name": "notifications",
+      "type": "base",
+      "listRule": "",
+      "viewRule": "",
+      "createRule": "",
+      "updateRule": "",
+      "deleteRule": "",
+      "schema": [
+        { "name": "pass_id", "type": "relation", "required": true, "options": { "collectionId": "passes" } },
+        { "name": "push_notification_text", "type": "text", "required": true },
+        { "name": "publication_date", "type": "date", "required": false }
+      ]
+    },
+    {
+      "id": "webhooks",
+      "name": "webhooks",
+      "type": "base",
+      "listRule": "",
+      "viewRule": "",
+      "createRule": "",
+      "updateRule": "",
+      "deleteRule": "",
+      "schema": [
+        { "name": "event", "type": "text", "required": true },
+        { "name": "subscription_url", "type": "url", "required": true },
+        { "name": "target_url", "type": "url", "required": true }
+      ]
+    }
+  ]
+}

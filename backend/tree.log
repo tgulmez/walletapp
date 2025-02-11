@@ -1,0 +1,124 @@
+.
+├── Dockerfile
+├── __pycache__
+│   └── main.cpython-313.pyc
+├── app
+│   ├── __pycache__
+│   │   └── main.cpython-313.pyc
+│   ├── api
+│   │   └── v1
+│   ├── core
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── config.py
+│   │   └── security.py
+│   ├── database
+│   │   ├── __init__.py
+│   │   └── session.py
+│   ├── main.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   └── pass.py
+│   ├── services
+│   │   ├── __init__.py
+│   │   └── pass.py
+│   └── utils
+│       ├── __init__.py
+│       ├── file_processing.py
+│       └── webhooks.py
+├── env
+│   ├── bin
+│   │   ├── Activate.ps1
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── dotenv
+│   │   ├── fastapi
+│   │   ├── httpx
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.13
+│   │   ├── pyrsa-decrypt
+│   │   ├── pyrsa-encrypt
+│   │   ├── pyrsa-keygen
+│   │   ├── pyrsa-priv2pub
+│   │   ├── pyrsa-sign
+│   │   ├── pyrsa-verify
+│   │   ├── python -> python3.13
+│   │   ├── python3 -> python3.13
+│   │   ├── python3.13 -> /Users/taylangulmez/.pyenv/versions/3.13.1/bin/python3.13
+│   │   ├── uvicorn
+│   │   └── watchfiles
+│   ├── include
+│   │   └── python3.13
+│   ├── lib
+│   │   └── python3.13
+│   └── pyvenv.cfg
+├── pocketbase
+│   ├── CHANGELOG.md
+│   ├── LICENSE.md
+│   ├── pb_data
+│   │   ├── auxiliary.db
+│   │   ├── data.db
+│   │   ├── storage
+│   │   └── types.d.ts
+│   ├── pb_migrations
+│   │   ├── 1738759417_created_wallets.js
+│   │   ├── 1738759451_updated_wallets.js
+│   │   ├── 1738759502_updated_wallets.js
+│   │   ├── 1738759553_updated_wallets.js
+│   │   ├── 1738759575_updated_wallets.js
+│   │   ├── 1738759677_updated_users.js
+│   │   ├── 1738760696_updated_wallets.js
+│   │   ├── 1738760800_updated_wallets.js
+│   │   ├── 1738761028_updated_wallets.js
+│   │   ├── 1738761049_updated_wallets.js
+│   │   ├── 1738761141_updated_wallets.js
+│   │   ├── 1738761660_updated_wallets.js
+│   │   ├── 1738776762_updated_wallets.js
+│   │   ├── 1738776795_updated_wallets.js
+│   │   ├── 1738783300_updated_users.js
+│   │   ├── 1738956115_updated_wallets.js
+│   │   ├── 1738956841_updated_wallets.js
+│   │   ├── 1738956866_updated_wallets.js
+│   │   ├── 1739057896_updated_users.js
+│   │   ├── 1739058106_updated_users.js
+│   │   ├── 1739064197_deleted_notifications.js
+│   │   ├── 1739064205_deleted_pass_templates.js
+│   │   ├── 1739064213_deleted_passes.js
+│   │   ├── 1739064222_deleted_webhooks.js
+│   │   ├── 1739068557_created_pass_templates.js
+│   │   ├── 1739068579_created_passes.js
+│   │   ├── 1739068595_created_notifications.js
+│   │   ├── 1739068609_created_webhooks.js
+│   │   ├── 1739068716_updated_notifications.js
+│   │   ├── 1739068746_updated_notifications.js
+│   │   ├── 1739068777_updated_notifications.js
+│   │   ├── 1739068819_updated_pass_templates.js
+│   │   ├── 1739068875_updated_pass_templates.js
+│   │   ├── 1739137139_updated_pass_templates.js
+│   │   ├── 1739137208_updated_pass_templates.js
+│   │   ├── 1739137237_updated_pass_templates.js
+│   │   ├── 1739137299_updated_pass_templates.js
+│   │   ├── 1739137339_updated_pass_templates.js
+│   │   ├── 1739137376_updated_pass_templates.js
+│   │   ├── 1739137431_updated_pass_templates.js
+│   │   ├── 1739137459_updated_pass_templates.js
+│   │   ├── 1739137480_updated_pass_templates.js
+│   │   ├── 1739137501_updated_pass_templates.js
+│   │   ├── 1739137535_updated_pass_templates.js
+│   │   ├── 1739137673_updated_passes.js
+│   │   ├── 1739137718_updated_passes.js
+│   │   ├── 1739137822_updated_passes.js
+│   │   ├── 1739137857_updated_passes.js
+│   │   ├── 1739137892_updated_passes.js
+│   │   ├── 1739137911_updated_passes.js
+│   │   ├── 1739138019_updated_webhooks.js
+│   │   ├── 1739138046_updated_webhooks.js
+│   │   └── 1739138067_updated_webhooks.js
+│   └── pocketbase
+├── requirements.txt
+├── start.sh
+└── tree.log
+
+22 directories, 100 files
