@@ -1,2 +1,18 @@
+# Python
+__pycache__/
+env/
+*.pyc
+
+# Node.js
 node_modules/
-.env
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Docker
+*.log
+
+# Other
+pocketbase/pb_data/
+pocketbase/pb_migrations/
+
